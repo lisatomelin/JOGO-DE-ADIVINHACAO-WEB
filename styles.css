@@ -1,0 +1,62 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #070707;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #884ca0;
+}
+
+p {
+    color: #0e0d0d;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #ce35a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    gap: 100px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: default;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+.jogo-container {
+    border: 2px solid #cc65bb; 
+    padding: 20px; 
+    width: 300px; 
+    margin: 0 auto; 
+    background-color: white;
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+
+    
+}

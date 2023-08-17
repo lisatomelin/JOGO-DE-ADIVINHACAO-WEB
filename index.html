@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DE ADIVINHAÇÃO</title>
+
+    <link rel="stylesheet" href = "styles.css">
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="jogo-container">
+        
+        <h1>Jogo de Adivinhação</h1>
+        <p>Vamos lá! Tente adivinhar um número entre 1 e 20!</p>
+    
+        <div class="input-container"><input type="number" id="tentativaJogador" min="1" max="20">
+            <button onclick="checarTentativa()" id="adivinhar">Adivinhar</button>
+        </div>
+        
+        <p id="mensagem"></p>
+
+    </div>
+    
+</body>
+</html>
