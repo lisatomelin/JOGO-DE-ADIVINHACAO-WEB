@@ -1,4 +1,3 @@
-// Gera um número randômico entre 1 e 20
 const numeroSorteado = Math.floor(Math.random() * 20) + 1;
 let numeroDeTentativas = 0;
 
@@ -11,7 +10,7 @@ function checarTentativa() {
     if (jogador === numeroSorteado) {
         messageElement.textContent = `Parabéns! Você acertou em ${numeroDeTentativas} tentativas.`;
         messageElement.style.color = "green";
-        disableInputAndButton();
+        desabilitarTentativaEBotao(); 
     } else if (jogador < numeroSorteado) {
         messageElement.textContent = "O número é maior. Não desanime e tente novamente.";
         messageElement.style.color = "red";
@@ -25,5 +24,5 @@ function checarTentativa() {
 
 function desabilitarTentativaEBotao() {
     document.getElementById("tentativaJogador").disabled = true;
-    document.querySelector("adivinhar").disabled = true;
+    document.getElementById("adivinhar").disabled = true; 
 }
